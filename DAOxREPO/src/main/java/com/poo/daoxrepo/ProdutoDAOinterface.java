@@ -11,10 +11,9 @@ import java.util.ArrayList;
  * @author tulio
  */
 public interface ProdutoDAOinterface {
-    public void add();    
+    public void add(Produto p);    
     public Produto getOne(int id);
     public ArrayList<Produto> getAll();
     public void update(Produto p);
     public void Delete(int id);
-    
 }
