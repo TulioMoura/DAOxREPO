@@ -20,7 +20,7 @@ public class Produto {
         this.id = id;
     }
 
-    public Produto(int id, String nome, float valor, String descição, Date dataCriacao) {
+    public Produto(int id, String nome, double valor, String descição, Date dataCriacao) {
         this.id = id;
         this.nome = nome;
         this.valor = valor;
@@ -36,7 +36,7 @@ public class Produto {
         this.nome = nome;
     }
 
-    public float getValor() {
+    public double getValor() {
         return valor;
     }
 
@@ -61,7 +61,7 @@ public class Produto {
     }
     private int id;
     private String nome;
-    private float valor;
+    private double valor;
     private String descição;
     private Date dataCriacao;
 }

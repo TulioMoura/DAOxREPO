@@ -11,4 +11,12 @@
         <maven.compiler.target>19</maven.compiler.target>
         <exec.mainClass>com.poo.daoxrepo.DAOxREPO</exec.mainClass>
     </properties>
+    <dependencies>
+        <dependency>
+        <groupId>org.xerial</groupId>
+        <artifactId> sqlite-jdbc</artifactId>
+        <version>3.25.2</version>
+    </dependency>
+    </dependencies>
+    
 </project>

@@ -11,9 +11,9 @@ import java.util.ArrayList;
  * @author tulio
  */
 public interface ProdutoDAOinterface {
-    public void add(Produto p);    
-    public Produto getOne(int id);
-    public ArrayList<Produto> getAll();
-    public void update(Produto p);
-    public void Delete(int id);
+    public void add(Produto p)throws Exception;    
+    public Produto getOne(int id)throws Exception;
+    public ArrayList<Produto> getAll()throws Exception;
+    public void update(Produto p)throws Exception;
+    public void delete(int id)throws Exception;
 }
