@@ -7,7 +7,8 @@ package com.poo.daoxrepo;
 import java.util.ArrayList;
 
 /**
- *
+ * interface que define os métodos necessários em um DAO genérico para produto;
+ * deve ser importada por qualquer classe que implemente um DAO;
  * @author tulio
  */
 public interface ProdutoDAOinterface {
