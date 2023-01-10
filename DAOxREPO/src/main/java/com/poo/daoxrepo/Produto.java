@@ -12,13 +12,12 @@ import java.util.Date;
  */
 public class Produto {
 
-    public int getId() {
-        return id;
-    }
+    private int id;
+    private String nome;
+    private double valor;
+    private String descição;
+    private Date dataCriacao;
 
-    public void setId(int id) {
-        this.id = id;
-    }
 
     public Produto(int id, String nome, double valor, String descição, Date dataCriacao) {
         this.id = id;
@@ -27,7 +26,13 @@ public class Produto {
         this.descição = descição;
         this.dataCriacao = dataCriacao;
     }
+    public int getId() {
+            return id;
+        }
 
+        public void setId(int id) {
+            this.id = id;
+        }
     public String getNome() {
         return nome;
     }
@@ -59,9 +64,9 @@ public class Produto {
     public void setDataCriacao(Date dataCriacao) {
         this.dataCriacao = dataCriacao;
     }
-    private int id;
-    private String nome;
-    private double valor;
-    private String descição;
-    private Date dataCriacao;
+    
+    @Override
+    public String toString() {
+        return "Produto{" + "id=" + id + ", nome=" + nome + ", valor=" + valor + ", desci\u00e7\u00e3o=" + descição + ", dataCriacao=" + dataCriacao + '}';
+    }
 }
